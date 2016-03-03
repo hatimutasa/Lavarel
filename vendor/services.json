@@ -1,6 +1,7 @@
 {
     "providers": [
         "Maatwebsite\\Excel\\ExcelServiceProvider",
+        "Intervention\\Image\\ImageServiceProviderLaravel5",
         "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",
         "Illuminate\\Auth\\AuthServiceProvider",
         "Illuminate\\Bus\\BusServiceProvider",
@@ -31,6 +32,7 @@
     ],
     "eager": [
         "Maatwebsite\\Excel\\ExcelServiceProvider",
+        "Intervention\\Image\\ImageServiceProviderLaravel5",
         "Illuminate\\Auth\\AuthServiceProvider",
         "Illuminate\\Routing\\ControllerServiceProvider",
         "Illuminate\\Cookie\\CookieServiceProvider",

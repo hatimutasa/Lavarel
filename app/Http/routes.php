@@ -31,8 +31,14 @@ Route::group(['namespace' => 'Home'], function()
     Route::resource('index', 'IndexController');
 });
 
+// 后台管理路由
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function()
 {
     Route::get('/', 'AdminHomeController@index');
+    // 商品区块路由
+    Route::get('goods/', 'GoodsController@index');
+    Route::get('goods/index', 'GoodsController@index');
+    Route::match(['get','post'],'goods/index', 'GoodsController@index');
+    Route::get('goods/create', 'GoodsController@create');
     Route::resource('pages', 'PagesController');
 });

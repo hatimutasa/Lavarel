@@ -113,6 +113,7 @@ return [
 		* 自定义添加第三方
 		*/
 		'Maatwebsite\Excel\ExcelServiceProvider',
+		'Intervention\Image\ImageServiceProviderLaravel5',
 
 		/*
 		 * Laravel Framework Service Providers...
@@ -167,6 +168,7 @@ return [
 		* 自定义添加第三方
 		*/
 		'Excel'     => 'Maatwebsite\Excel\Facades\Excel',
+		'Image' 	=> 'Intervention\Image\Facades\Image',
 
 		'App'       => 'Illuminate\Support\Facades\App',
 		'Artisan'   => 'Illuminate\Support\Facades\Artisan',
