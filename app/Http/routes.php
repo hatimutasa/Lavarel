@@ -38,6 +38,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
     // 商品区块路由
     Route::get('goods/', 'GoodsController@index');
     Route::get('goods/index', 'GoodsController@index');
+    Route::get('goods/test', 'GoodsController@test');
     Route::match(['get','post'],'goods/index', 'GoodsController@index');
     Route::get('goods/create', 'GoodsController@create');
     Route::resource('pages', 'PagesController');
